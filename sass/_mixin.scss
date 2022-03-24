@@ -1,0 +1,47 @@
+// variables
+$font-l: 24px;
+$font-l2: 20px;
+$font-m: 16px;
+$font-s: 12px;
+
+$blue: #31baf9;
+$green: #86d73f;
+$orange: #ff982d;
+$darkOrange: #ff6c03;
+$red: #ff1200;
+
+// 多用於logo超連結
+@mixin hide-text($width, $height) {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: $width;
+  height: $height;
+  display: block;
+}
+
+@mixin block-fields($width, $margin, $txt-align) {
+  width: $width;
+  margin: 0 $margin;
+  text-align: $txt-align;
+}
+
+@mixin saved-btn($color) {
+  border: 6px solid $color;
+  background: transparent;
+  color: $color;
+  box-shadow: none;
+  font-size: 32px;
+  text-align: center;
+  &:after {
+    content: "BMI";
+    display: block;
+    font-size: 14px;
+  }
+}
+
+@mixin saved-result($color) {
+  color: $color;
+  font-size: 32px;
+  margin-left: 10px;
+}
