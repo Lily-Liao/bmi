@@ -33,6 +33,7 @@ $red: #ff1200;
   box-shadow: none;
   font-size: 32px;
   text-align: center;
+  cursor: not-allowed;
   &:after {
     content: "BMI";
     display: block;

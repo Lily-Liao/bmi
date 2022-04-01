@@ -45,6 +45,7 @@
     font-size: 24px;
     color: #424242;
     position: relative;
+    cursor: pointer;
   }
   &__save:hover {
     background: #ffd366;
@@ -52,6 +53,17 @@
   }
   &__save:active {
     background: #dea821;
+  }
+}
+@include pad(){
+  .header{
+    display: block;
+    &__logo {
+      margin: 5% auto;
+    }
+    &__btn {
+      padding: 3% 40%;
+    }
   }
 }
 .header__btn.saved {
@@ -180,6 +192,7 @@
   font-size: 16px;
   padding: 3px;
   border: 2px solid #424242;
+  cursor: pointer;
 }
 .bg-blue {
   background: $blue;
