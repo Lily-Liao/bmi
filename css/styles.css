@@ -215,6 +215,7 @@ img {
   font-size: 24px;
   color: #424242;
   position: relative;
+  cursor: pointer;
 }
 
 .header__save:hover {
@@ -225,6 +226,18 @@ img {
 
 .header__save:active {
   background: #dea821;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+  }
+  .header__logo {
+    margin: 5% auto;
+  }
+  .header__btn {
+    padding: 3% 40%;
+  }
 }
 
 .header__btn.saved .header__save:hover {
@@ -271,6 +284,7 @@ img {
           box-shadow: none;
   font-size: 32px;
   text-align: center;
+  cursor: not-allowed;
 }
 
 .saved-blue:after {
@@ -287,6 +301,7 @@ img {
           box-shadow: none;
   font-size: 32px;
   text-align: center;
+  cursor: not-allowed;
 }
 
 .saved-green:after {
@@ -303,6 +318,7 @@ img {
           box-shadow: none;
   font-size: 32px;
   text-align: center;
+  cursor: not-allowed;
 }
 
 .saved-orange:after {
@@ -319,6 +335,7 @@ img {
           box-shadow: none;
   font-size: 32px;
   text-align: center;
+  cursor: not-allowed;
 }
 
 .saved-darkOrange:after {
@@ -335,6 +352,7 @@ img {
           box-shadow: none;
   font-size: 32px;
   text-align: center;
+  cursor: not-allowed;
 }
 
 .saved-red:after {
@@ -455,6 +473,7 @@ img {
   font-size: 16px;
   padding: 3px;
   border: 2px solid #424242;
+  cursor: pointer;
 }
 
 .bg-blue {
